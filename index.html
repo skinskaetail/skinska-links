@@ -3,47 +3,149 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Skinska - All Social Links</title>
+  <title>Skinska Naturals — All Links</title>
+  <meta name="description" content="Skinska Naturals — all official links in one place." />
   <style>
-    :root{--bg:#f6f7fb;--card:#fff;--accent:#111}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);
-         display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
-    .card{width:100%;max-width:520px;background:var(--card);border-radius:16px;padding:28px;
-          box-shadow:0 10px 30px rgba(0,0,0,0.08);text-align:center}
-    .logo{width:96px;height:96px;border-radius:12px;object-fit:cover;margin:0 auto 12px;display:block}
-    h1{margin:6px 0 18px;font-size:20px;color:var(--accent)}
-    p.subtitle{margin:0 0 18px;color:#666;font-size:13px}
-    .buttons{display:flex;flex-direction:column;gap:10px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 14px;
-         background:var(--accent);color:white;text-decoration:none;border-radius:12px;font-weight:700}
-    .small{background:transparent;color:#444;border-radius:10px;padding:8px 10px;font-weight:600;border:1px solid #eee;margin-top:16px;display:inline-block}
-    footer{margin-top:16px;color:#888;font-size:12px}
-    @media (max-width:420px){.card{padding:18px}}
+    /* Brand: Beige / Cream / Natural theme */
+    :root{
+      --bg:#f6f3ef;         /* very light cream */
+      --card:#fff;          /* white card */
+      --accent:#d8b79a;     /* soft beige/gold accent */
+      --accent-dark:#b88f6f;/* darker accent for hover */
+      --text:#111217;       /* dark text */
+      --muted:#6b6b6b;      /* muted text */
+      --btn-bg:#2a2a2a;     /* button background (dark) */
+      --btn-radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#fbf8f6);} 
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:48px 18px}
+
+    .card{width:100%;max-width:560px;background:var(--card);border-radius:18px;padding:28px 28px 36px;box-shadow:0 18px 40px rgba(20,18,16,0.06);text-align:center;position:relative}
+    .brand{display:flex;align-items:center;gap:14px;justify-content:center;margin-bottom:6px}
+    .logo{width:76px;height:76px;border-radius:14px;object-fit:cover;box-shadow:0 6px 18px rgba(216,183,154,0.12)}
+    h1{margin:6px 0 4px;font-size:20px;color:var(--text);letter-spacing:0.2px}
+    p.lead{margin:0 0 20px;color:var(--muted);font-size:13px}
+
+    .buttons{display:flex;flex-direction:column;gap:12px;margin:2px 0 8px}
+    .btn{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:var(--btn-radius);text-decoration:none;color:white;background:var(--btn-bg);font-weight:700;box-shadow:inset 0 -4px 0 rgba(0,0,0,0.06);transition:transform .12s ease,background .12s ease}
+    .btn:hover{transform:translateY(-3px);background:var(--btn-bg)}
+    .btn svg{width:20px;height:20px;flex-shrink:0;filter:brightness(0) invert(1)}
+
+    /* Circular icon badges */
+    .icon-row{display:flex;gap:14px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+    .icon{width:48px;height:48px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--card);border:1px solid rgba(0,0,0,0.06);box-shadow:0 6px 12px rgba(10,10,10,0.04);transition:transform .12s ease,background .12s ease}
+    .icon svg{width:22px;height:22px}
+    .icon:hover{transform:translateY(-6px);background:var(--accent);}
+    .icon:hover svg{filter:none}
+
+    footer{margin-top:12px;color:var(--muted);font-size:12px}
+
+    /* Responsive */
+    @media (max-width:520px){.card{padding:18px}.logo{width:66px;height:66px}.icon{width:44px;height:44px}}
   </style>
 </head>
 <body>
-  <div class="card">
-    <img class="logo" src="https://skinska.com/apps/skinska_files/logo.png" alt="Skinska logo" onerror="this.style.display='none'"/>
-    <h1>Skinska Naturals</h1>
-    <p class="subtitle">Tap any button to open — all official links in one place.</p>
+  <div class="wrap">
+    <div class="card" role="main">
+      <div class="brand">
+        <img class="logo" src="https://skinska.com/apps/skinska_files/logo.png" alt="Skinska logo" onerror="this.style.display='none'">
+      </div>
 
-    <div class="buttons">
-      <a class="btn" href="https://skinska.com/" target="_blank" rel="noopener">Website</a>
-      <a class="btn" href="https://www.facebook.com/SkinskaNaturals/" target="_blank" rel="noopener">Facebook</a>
-      <a class="btn" href="https://in.pinterest.com/SkinskaNaturals/" target="_blank" rel="noopener">Pinterest</a>
-      <a class="btn" href="https://www.youtube.com/@SkinskaNaturals" target="_blank" rel="noopener">YouTube</a>
-      <a class="btn" href="https://x.com/skinskapharma" target="_blank" rel="noopener">X (Twitter)</a>
-      <a class="btn" href="https://www.instagram.com/skinskanaturals/" target="_blank" rel="noopener">Instagram</a>
-      <a class="btn" href="https://www.threads.net/@skinskanaturals" target="_blank" rel="noopener">Threads</a>
-      <a class="btn" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank" rel="noopener">Google Maps / Reviews</a>
-      <a class="btn" href="https://wa.me/919346987789" target="_blank" rel="noopener">WhatsApp</a>
+      <h1>Skinska Naturals</h1>
+      <p class="lead">Tap any button — all official links in one elegant place.</p>
+
+      <div class="buttons">
+        <!-- Website -->
+        <a class="btn" href="https://skinska.com/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Website</span>
+        </a>
+
+        <!-- Facebook -->
+        <a class="btn" href="https://www.facebook.com/SkinskaNaturals/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 3h3v4h-3v2h3v6h-3v6h-3v-6h-2v-2h2v-2a3 3 0 013-3z" fill="#fff"/></svg>
+          <span>Facebook</span>
+        </a>
+
+        <!-- Pinterest -->
+        <a class="btn" href="https://in.pinterest.com/SkinskaNaturals/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM11 11c0 1.2.7 2.3 2 2.3 1.5 0 2.7-1.4 2.7-3.5 0-2.2-1.5-3.8-3.6-3.8-2.9 0-4.3 2-4.3 4.5 0 1.1.4 1.8.8 2.1.1.1.2.1.2 0 .1-.1.4-.3.5-.6.1-.2.1-.4 0-.6-.2-.6-.4-1-.4-1.7 0-1.3 1-2.5 2.5-2.5 1.5 0 2.2 1 2.2 2.3 0 1.6-.8 2.8-2 2.8-.6 0-1-.4-1-1 0-.3.1-.6.3-.8.1-.1.1-.2.1-.3z" fill="#fff"/></svg>
+          <span>Pinterest</span>
+        </a>
+
+        <!-- YouTube -->
+        <a class="btn" href="https://www.youtube.com/@SkinskaNaturals" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M10 8l6 4-6 4V8z" fill="#fff"/></svg>
+          <span>YouTube</span>
+        </a>
+
+        <!-- X (Twitter) -->
+        <a class="btn" href="https://x.com/skinskapharma" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M22 4.5c-.6.3-1.2.5-1.9.6.7-.4 1.2-1 1.4-1.8-.7.4-1.5.7-2.4.9C18.9 3.3 18 3 17 3c-1.6 0-2.8 1.3-2.8 2.8 0 .2 0 .4.1.6C11 6.4 8.3 4.9 6.6 3c-.2.4-.3.8-.3 1.3 0 .9.5 1.7 1.2 2.1-.5 0-1-.2-1.4-.4 0 1.3.9 2.4 2.1 2.6-.4.1-.8.1-1.2.1-.3 0-.6 0-.9-.1.6 1.7 2.4 2.9 4.6 2.9-1.6 1.2-3.6 1.9-5.7 1.9h-.8c1.1.8 2.4 1.3 3.8 1.3 4.6 0 7.1-3.8 7.1-7.1v-.3c.5-.4 1-1 1.4-1.6-.4.2-.9.3-1.4.4z" fill="#fff"/></svg>
+          <span>X (Twitter)</span>
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn" href="https://www.instagram.com/skinskanaturals/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6a5 5 0 100 10 5 5 0 000-10zM18.2 5a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill="#fff"/></svg>
+          <span>Instagram</span>
+        </a>
+
+        <!-- Threads -->
+        <a class="btn" href="https://www.threads.net/@skinskanaturals" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 2c3.9 0 7 3.1 7 7 0 5.7-7 13-7 13s-7-7.3-7-13c0-3.9 3.1-7 7-7z" fill="#fff"/></svg>
+          <span>Threads</span>
+        </a>
+
+        <!-- Google Maps / Reviews -->
+        <a class="btn" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7zM12 11.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" fill="#fff"/></svg>
+          <span>Google Maps / Reviews</span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a class="btn" href="https://wa.me/919346987789" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M20 5.9A10 10 0 103.5 19L2 22l3-1A10 10 0 0020 5.9zM16.6 14.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1-.2.2-.6.7-.7.8-.1.2-.3.2-.5.1-.4-.1-1.6-.6-3-1.8-1.1-1-1.9-2.2-2.1-2.5-.2-.3 0-.5.1-.7.1-.2.2-.4.3-.6.1-.2.1-.4 0-.6-.1-.2-.5-1.2-.7-1.6-.2-.4-.4-.3-.6-.3-.2 0-.4 0-.6 0-.2 0-.5.1-.8.3-.3.2-1 1-1 2.4 0 1.4 1 2.9 1.2 3.1.2.2 2 3.1 4.9 4.3 1.3.6 2.3.8 3.1.9 1 .1 1.6.1 2-.1.4-.1 1.2-.5 1.4-1.1.2-.6.2-1.1.2-1.2 0-.1-.1-.2-.3-.3z" fill="#fff"/></svg>
+          <span>WhatsApp</span>
+        </a>
+
+      </div>
+
+      <!-- Icon row: clickable icons that link directly to each platform -->
+      <div class="icon-row" aria-hidden="false">
+        <a class="icon" href="https://skinska.com/" target="_blank" title="Website" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20" stroke="#b88f6f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="icon" href="https://www.facebook.com/SkinskaNaturals/" target="_blank" title="Facebook" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M15 3h3v4h-3v2h3v6h-3v6h-3v-6h-2v-2h2v-2a3 3 0 013-3z" fill="#4267B2"/></svg>
+        </a>
+        <a class="icon" href="https://in.pinterest.com/SkinskaNaturals/" target="_blank" title="Pinterest" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM11 11c0 1.2.7 2.3 2 2.3 1.5 0 2.7-1.4 2.7-3.5 0-2.2-1.5-3.8-3.6-3.8-2.9 0-4.3 2-4.3 4.5 0 1.1.4 1.8.8 2.1.1.1.2.1.2 0 .1-.1.4-.3.5-.6.1-.2.1-.4 0-.6-.2-.6-.4-1-.4-1.7 0-1.3 1-2.5 2.5-2.5 1.5 0 2.2 1 2.2 2.3 0 1.6-.8 2.8-2 2.8-.6 0-1-.4-1-1 0-.3.1-.6.3-.8.1-.1.1-.2.1-.3z" fill="#E60023"/></svg>
+        </a>
+        <a class="icon" href="https://www.youtube.com/@SkinskaNaturals" target="_blank" title="YouTube" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M10 8l6 4-6 4V8z" fill="#FF0000"/></svg>
+        </a>
+        <a class="icon" href="https://x.com/skinskapharma" target="_blank" title="X" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M22 4.5c-.6.3-1.2.5-1.9.6.7-.4 1.2-1 1.4-1.8-.7.4-1.5.7-2.4.9C18.9 3.3 18 3 17 3c-1.6 0-2.8 1.3-2.8 2.8 0 .2 0 .4.1.6C11 6.4 8.3 4.9 6.6 3c-.2.4-.3.8-.3 1.3 0 .9.5 1.7 1.2 2.1-.5 0-1-.2-1.4-.4 0 1.3.9 2.4 2.1 2.6-.4.1-.8.1-1.2.1-.3 0-.6 0-.9-.1.6 1.7 2.4 2.9 4.6 2.9-1.6 1.2-3.6 1.9-5.7 1.9h-.8c1.1.8 2.4 1.3 3.8 1.3 4.6 0 7.1-3.8 7.1-7.1v-.3c.5-.4 1-1 1.4-1.6-.4.2-.9.3-1.4.4z" fill="#000"/></svg>
+        </a>
+        <a class="icon" href="https://www.instagram.com/skinskanaturals/" target="_blank" title="Instagram" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6a5 5 0 100 10 5 5 0 000-10zM18.2 5a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill="#C13584"/></svg>
+        </a>
+        <a class="icon" href="https://www.threads.net/@skinskanaturals" target="_blank" title="Threads" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 2c3.9 0 7 3.1 7 7 0 5.7-7 13-7 13s-7-7.3-7-13c0-3.9 3.1-7 7-7z" fill="#000"/></svg>
+        </a>
+        <a class="icon" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank" title="Google Maps" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7zM12 11.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" fill="#34A853"/></svg>
+        </a>
+        <a class="icon" href="https://wa.me/919346987789" target="_blank" title="WhatsApp" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M20 5.9A10 10 0 103.5 19L2 22l3-1A10 10 0 0020 5.9zM16.6 14.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1-.2.2-.6.7-.7.8-.1.2-.3.2-.5.1-.4-.1-1.6-.6-3-1.8-1.1-1-1.9-2.2-2.1-2.5-.2-.3 0-.5.1-.7.1-.2.2-.4.3-.6.1-.2.1-.4 0-.6-.1-.2-.5-1.2-.7-1.6-.2-.4-.4-.3-.6-.3-.2 0-.4 0-.6 0-.2 0-.5.1-.8.3-.3.2-1 1-1 2.4 0 1.4 1 2.9 1.2 3.1.2.2 2 3.1 4.9 4.3 1.3.6 2.3.8 3.1.9 1 .1 1.6.1 2-.1.4-.1 1.2-.5 1.4-1.1.2-.6.2-1.1.2-1.2 0-.1-.1-.2-.3-.3z" fill="#25D366"/></svg>
+        </a>
+      </div>
+
+      <footer>Created for Skinska • Ready for GitHub Pages</footer>
     </div>
-
-    <div style="text-align:center">
-      <a class="small" href="https://skinska.com/" target="_blank" rel="noopener">Visit skinska.com</a>
-    </div>
-
-    <footer>Created for Skinska • Ready for GitHub Pages</footer>
   </div>
 </body>
 </html>
