@@ -5,264 +5,317 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Skinska Naturals — Official Links</title>
 
-  <!-- Prevent GitHub Cache -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-
-  <!-- Fonts -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --brand1: #2b4f5c;   /* Primary */
-      --brand2: #ffffff;   /* White */
-      --brand3: #a1decd;   /* Mint */
-      --brand4: #1d4d5b;   /* Dark teal */
-      --brand5: #232323;   /* Text */
+      --brand-1: #2b4f5c;
+      --brand-2: #ffffff;
+      --brand-3: #a1decd;
+      --brand-4: #1d4d5b;
+      --brand-5: #232323;
 
-      --card-radius: 22px;
-      --btn-radius: 14px;
-
-      font-family: 'Inter', sans-serif;
-      color-scheme: light;
+      --radius-card: 20px;
+      --radius-btn: 14px;
+      --shadow-1: 0 8px 30px rgba(0,0,0,0.06);
+      --shadow-2: 0 16px 38px rgba(0,0,0,0.12);
     }
 
-    body{
+    * { box-sizing:border-box; }
+    body {
       margin:0;
-      background:#faf8f6;
+      background:#fbf8f5;
+      font-family:'Inter',sans-serif;
+      color:var(--brand-5);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .wrap {
+      min-height:100vh;
       display:flex;
+      align-items:center;
       justify-content:center;
-      padding:40px 12px;
+      padding:30px 18px;
     }
 
-    /* MAIN CARD */
-    .card{
+    .card {
       width:100%;
-      max-width:980px;
-      background:white;
-      border-radius:var(--card-radius);
-      padding:28px;
+      max-width:900px;
+      background:var(--brand-2);
+      padding:30px;
+      border-radius:var(--radius-card);
+      box-shadow:var(--shadow-1);
       display:grid;
-      grid-template-columns: 1fr 320px;
-      gap:26px;
-      box-shadow:0 10px 40px rgba(0,0,0,0.06);
+      grid-template-columns: 1fr 300px;
+      gap:28px;
     }
 
-    /* LEFT SECTION */
-    .brand-box{
+    /* BRAND BAR */
+    .brand {
       display:flex;
       gap:16px;
       align-items:center;
+      margin-bottom:14px;
     }
-
-    .brand-box img{
-      width:82px;
-      height:82px;
-      border-radius:16px;
-      object-fit:cover;
-      background:#eee;
-      box-shadow:0 14px 30px rgba(0,0,0,0.08);
+    .brand img {
+      width:80px;height:80px;border-radius:14px;object-fit:cover;
+      background:#f2f2f2;
+      box-shadow:0 10px 25px rgba(0,0,0,0.10);
     }
-
-    .brand-box h1{
+    .brand h1 {
       margin:0;
       font-size:22px;
       font-weight:800;
-      color:var(--brand5);
+      color:var(--brand-5);
     }
-
-    .brand-box p{
-      margin:4px 0 0;
+    .lead {
+      margin:4px 0;
       color:#777;
-      font-size:13px;
+      font-size:14px;
     }
 
-    /* BUTTON LIST */
-    .buttons{
-      display:flex;
-      flex-direction:column;
-      gap:14px;
-      margin-top:14px;
-    }
+    /* LEFT BUTTON AREA */
+    .buttons { display:flex;flex-direction:column;gap:14px; }
 
-    .btn{
-      background:var(--brand1);
-      padding:15px 18px;
-      border-radius:var(--btn-radius);
+    .btn {
       display:flex;
       align-items:center;
       gap:14px;
-      color:white;
-      font-size:15px;
-      font-weight:600;
+      padding:16px 18px;
+      border-radius:var(--radius-btn);
       text-decoration:none;
-      box-shadow:0 8px 18px rgba(0,0,0,0.08);
+      background:#2b4f5c;
+      color:white;
+      font-weight:700;
+      box-shadow:0 8px 25px rgba(0,0,0,0.10);
       transition:0.2s;
     }
-
-    .btn:hover{
-      background:var(--brand4);
+    .btn:hover {
+      background:#1d4d5b;
       transform:translateY(-3px);
-      box-shadow:0 12px 26px rgba(0,0,0,0.12);
+      box-shadow:var(--shadow-2);
     }
-
-    .btn svg{
-      width:20px;
-      height:20px;
-      fill:white;
-    }
+    .btn svg { width:20px;height:20px;fill:white; }
 
     /* RIGHT PANEL */
-    .right{
-      background:#fdfdfd;
-      border-radius:18px;
+    .side {
+      background:#f7f7f7;
+      border-radius:16px;
       padding:20px;
       text-align:center;
-      box-shadow:0 6px 20px rgba(0,0,0,0.05);
     }
-
-    .right h2{
-      margin:0;
+    .side h2 {
+      margin:4px 0 6px;
       font-size:20px;
       font-weight:800;
-      color:var(--brand5);
     }
+    .side p { margin:0 0 14px; color:#777; font-size:13px; }
 
-    .right p{
-      margin:6px 0 18px;
-      color:#777;
-      font-size:13px;
-    }
-
-    .icon-row{
+    /* ICON ROW */
+    .icon-row {
       display:flex;
       justify-content:center;
-      gap:14px;
       flex-wrap:wrap;
-      margin-bottom:12px;
+      gap:14px;
+      margin-top:6px;
     }
-
-    .icon{
-      width:58px;
-      height:58px;
+    .icon {
+      width:60px;
+      height:60px;
       border-radius:50%;
       background:white;
+      border:1px solid #eaeaea;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
       display:flex;
-      justify-content:center;
       align-items:center;
-      box-shadow:0 10px 20px rgba(0,0,0,0.06);
-      border:1px solid #eee;
+      justify-content:center;
+      cursor:pointer;
       transition:0.2s;
     }
+    .icon:hover {
+      background:var(--brand-3);
+      transform:translateY(-4px);
+    }
+    .icon svg { width:26px;height:26px; }
 
-    .icon:hover{
-      transform:translateY(-5px);
-      background:var(--brand3);
-      border-color:var(--brand3);
+    /* QR MODAL */
+    .qr-modal {
+      position:fixed;
+      inset:0;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      background:rgba(0,0,0,0.55);
+      z-index:100;
+    }
+    .qr-modal.open { display:flex; }
+
+    .qr-card {
+      background:white;
+      padding:22px;
+      border-radius:18px;
+      max-width:330px;
+      text-align:center;
+      box-shadow:0 20px 60px rgba(0,0,0,0.3);
+    }
+    .qr-card img {
+      width:220px;
+      height:220px;
+      border-radius:10px;
+      margin-bottom:10px;
+    }
+    .close-btn {
+      background:#efefef;
+      border:0;
+      padding:10px 16px;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:700;
+      margin-top:10px;
+    }
+    .close-btn:hover {
+      background:#ddd;
     }
 
-    .icon svg{
-      width:22px;
-      height:22px;
-    }
+    footer { margin-top:12px;font-size:12px;color:#666;text-align:center; }
 
-    footer{
-      margin-top:14px;
-      font-size:12px;
-      color:#777;
-    }
-
-    /* RESPONSIVE */
-    @media(max-width:880px){
-      .card{
-        grid-template-columns: 1fr;
-      }
-      .right{
-        margin-top:14px;
-      }
+    @media(max-width:850px) {
+      .card { grid-template-columns:1fr; }
     }
   </style>
 </head>
 
 <body>
+  <div class="wrap">
+    <div class="card">
 
-<div class="card">
-
-  <!-- LEFT SIDE -->
-  <div>
-    <div class="brand-box">
-      <img src="https://skinska.com/apps/skinska_files/logo.png" alt="Skinska Logo">
+      <!-- LEFT CONTENT -->
       <div>
-        <h1>Skinska Naturals</h1>
-        <p>All official links — simple, elegant & updated.</p>
+        <div class="brand">
+          <img src="https://skinska.com/apps/skinska_files/logo.png" alt="">
+          <div>
+            <h1>Skinska Naturals</h1>
+            <p class="lead">All official links — elegant, simple & ready to share.</p>
+          </div>
+        </div>
+
+        <nav class="buttons">
+
+          <a class="btn" href="https://skinska.com/">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20"/></svg>
+            Visit Website
+          </a>
+
+          <a class="btn" href="https://skinska.com/collections/all">
+            <svg viewBox="0 0 24 24"><path d="M3 7h18v13H3zM16 3l-1.5 4h-7L6 3"/></svg>
+            Shop Products
+          </a>
+
+          <a class="btn" href="https://www.instagram.com/skinskanaturals/">
+            <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6a5 5 0 100 10 5 5 0 000-10zM18.2 5a1.2 1.2 0 110 2.4"/></svg>
+            Instagram
+          </a>
+
+          <a class="btn" href="https://www.youtube.com/@SkinskaNaturals">
+            <svg viewBox="0 0 24 24"><path d="M10 8l6 4-6 4V8z"/></svg>
+            YouTube Channel
+          </a>
+
+          <a class="btn" href="https://wa.me/919346987789">
+            <svg viewBox="0 0 24 24"><path d="M20 5.9A10 10 0 103.5 19L2 22l3-1A10 10 0 0020 5.9z"/></svg>
+            Message on WhatsApp
+          </a>
+
+          <a class="btn" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7z"/></svg>
+            Find Us (Maps)
+          </a>
+
+          <a class="btn" href="https://x.com/skinskapharma">
+            <svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg>
+            X (Twitter)
+          </a>
+
+        </nav>
+
       </div>
-    </div>
 
-    <div class="buttons">
-      <a class="btn" href="https://skinska.com/" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20"/></svg>
-        Visit Website
-      </a>
+      <!-- RIGHT CONTENT -->
+      <aside class="side">
+        <h2>Official Links</h2>
+        <p>One place for Shop, Social, Support & Reviews</p>
 
-      <a class="btn" href="https://skinska.com/collections/all" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M3 7h18v13H3zM16 3l-1.5 4h-7L6 3"/></svg>
-        Shop Products
-      </a>
+        <div class="icon-row">
 
-      <a class="btn" href="https://www.instagram.com/skinskanaturals/" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6a5 5 0 100 10 5 5 0 000-10z"/></svg>
-        Instagram
-      </a>
+          <!-- Website -->
+          <a class="icon" href="https://skinska.com/">
+            <svg viewBox="0 0 24 24"><path fill="#1d4d5b" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20"/></svg>
+          </a>
 
-      <a class="btn" href="https://www.youtube.com/@SkinskaNaturals" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M10 8l6 4-6 4V8z" /></svg>
-        YouTube Channel
-      </a>
+          <!-- Instagram -->
+          <a class="icon" href="https://www.instagram.com/skinskanaturals/">
+            <svg viewBox="0 0 24 24"><path fill="#C13584" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z"/></svg>
+          </a>
 
-      <a class="btn" href="https://wa.me/919346987789" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M20 5.9A10 10 0 103.5 19L2 22l3-1A10 10 0 0020 5.9z"/></svg>
-        Message on WhatsApp
-      </a>
+          <!-- YouTube -->
+          <a class="icon" href="https://www.youtube.com/@SkinskaNaturals">
+            <svg viewBox="0 0 24 24"><path fill="#ff0000" d="M10 8l6 4-6 4z"/></svg>
+          </a>
 
-      <a class="btn" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7z"/></svg>
-        Find Us (Maps)
-      </a>
+          <!-- Maps -->
+          <a class="icon" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8">
+            <svg viewBox="0 0 24 24"><path fill="#34a853" d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7z"/></svg>
+          </a>
 
-      <a class="btn" href="https://x.com/skinskapharma" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM9 9h6v6H9z"/></svg>
-        X (Twitter)
-      </a>
+          <!-- QR BUTTON (STYLE A) -->
+          <button id="open-qr" class="icon" style="border:none;background:white;cursor:pointer;">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" fill="#1d4d5b"/>
+              <rect x="14" y="3" width="7" height="7" fill="#1d4d5b"/>
+              <rect x="3" y="14" width="7" height="7" fill="#1d4d5b"/>
+              <rect x="14" y="14" width="3" height="3" fill="#1d4d5b"/>
+              <rect x="17.5" y="17.5" width="3.5" height="3.5" fill="#1d4d5b"/>
+            </svg>
+          </button>
+
+        </div>
+
+        <footer>Created for Skinska • Ready for GitHub Pages</footer>
+      </aside>
+
     </div>
   </div>
 
-  <!-- RIGHT SIDE -->
-  <div class="right">
-    <h2>Official Links</h2>
-    <p>One place for Shop, Social, Support & Reviews</p>
-
-    <div class="icon-row">
-      <a class="icon" href="https://skinska.com/" target="_blank">
-        <svg viewBox="0 0 24 24"><path stroke="#1d4d5b" fill="none" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20"/></svg>
-      </a>
-
-      <a class="icon" href="https://www.instagram.com/skinskanaturals/" target="_blank">
-        <svg viewBox="0 0 24 24"><path fill="#C13584" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z"/></svg>
-      </a>
-
-      <a class="icon" href="https://www.youtube.com/@SkinskaNaturals" target="_blank">
-        <svg viewBox="0 0 24 24"><path fill="#FF0000" d="M10 8l6 4-6 4V8z"/></svg>
-      </a>
-
-      <a class="icon" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank">
-        <svg viewBox="0 0 24 24"><path fill="#34A853" d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7z"/></svg>
-      </a>
+  <!-- QR MODAL -->
+  <div class="qr-modal" id="qrModal">
+    <div class="qr-card">
+      <h3>Scan to open Skinska</h3>
+      <img id="qrImage" src="">
+      <a id="downloadQr" class="close-btn" download="skinska-qr.png">Download</a>
+      <button id="closeQr" class="close-btn">Close</button>
     </div>
-
-    <footer>Created for Skinska • Ready for GitHub Pages</footer>
   </div>
 
-</div>
+  <script>
+    const targetUrl = "https://skinska.com/";
+    const qrUrl = "https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=" + encodeURIComponent(targetUrl);
+
+    const modal = document.getElementById("qrModal");
+    const openBtn = document.getElementById("open-qr");
+    const closeBtn = document.getElementById("closeQr");
+    const qrImg = document.getElementById("qrImage");
+    const downloadBtn = document.getElementById("downloadQr");
+
+    openBtn.onclick = () => {
+      qrImg.src = qrUrl;
+      downloadBtn.href = qrUrl;
+      modal.classList.add("open");
+    };
+
+    closeBtn.onclick = () => modal.classList.remove("open");
+    modal.onclick = e => { if(e.target === modal) modal.classList.remove("open"); }
+  </script>
+
 </body>
 </html>
