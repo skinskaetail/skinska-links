@@ -3,284 +3,266 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Skinska Naturals — All Links</title>
-  <meta name="description" content="Skinska Naturals — all official links in one place." />
-  <!-- Google Font -->
+  <title>Skinska Naturals — Official Links</title>
+
+  <!-- Prevent GitHub Cache -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root{
-      --brand-1: #2b4f5c;   /* primary deep teal */
-      --brand-2: #ffffff;   /* white */
-      --brand-3: #a1decd;   /* mint accent */
-      --brand-4: #1d4d5b;   /* darker teal for hover */
-      --brand-5: #232323;   /* deep text */
+      --brand1: #2b4f5c;   /* Primary */
+      --brand2: #ffffff;   /* White */
+      --brand3: #a1decd;   /* Mint */
+      --brand4: #1d4d5b;   /* Dark teal */
+      --brand5: #232323;   /* Text */
 
-      --card-radius:18px;
-      --btn-radius:14px;
-      --shadow-1: 0 8px 30px rgba(43,79,92,0.08);
-      --shadow-2: 0 14px 34px rgba(29,77,91,0.10);
+      --card-radius: 22px;
+      --btn-radius: 14px;
+
+      font-family: 'Inter', sans-serif;
       color-scheme: light;
-      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
     }
 
-    /* Reset / base */
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#fbf7f4 0%, #fcfbfa 100%);color:var(--brand-5);-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
-    a{color:inherit}
-    img{max-width:100%;display:block}
+    body{
+      margin:0;
+      background:#faf8f6;
+      display:flex;
+      justify-content:center;
+      padding:40px 12px;
+    }
 
-    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 18px}
-
-    /* Card */
+    /* MAIN CARD */
     .card{
-      width:100%;max-width:820px;background:var(--brand-2);
-      border-radius:var(--card-radius);padding:28px;
-      box-shadow:var(--shadow-1);text-align:left;display:grid;
-      grid-template-columns: 1fr 320px;gap:22px;align-items:start;
+      width:100%;
+      max-width:980px;
+      background:white;
+      border-radius:var(--card-radius);
+      padding:28px;
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:26px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.06);
     }
 
-    /* header left column */
-    .brand{
-      display:flex;gap:16px;align-items:center;
+    /* LEFT SECTION */
+    .brand-box{
+      display:flex;
+      gap:16px;
+      align-items:center;
     }
-    .logo{
-      width:86px;height:86px;border-radius:16px;object-fit:cover;
-      box-shadow:0 12px 36px rgba(43,79,92,0.06);
-      background:linear-gradient(180deg, rgba(43,79,92,0.06), rgba(161,222,205,0.03));
-      flex-shrink:0;
+
+    .brand-box img{
+      width:82px;
+      height:82px;
+      border-radius:16px;
+      object-fit:cover;
+      background:#eee;
+      box-shadow:0 14px 30px rgba(0,0,0,0.08);
     }
-    .brand h1{margin:0;font-size:20px;color:var(--brand-5);font-weight:800;letter-spacing:0.2px}
-    .brand p{margin:2px 0 0;color:#6b6b6b;font-size:13px}
 
-    header.meta{margin-bottom:12px}
-    .lead{margin:0 0 18px;color:#6b6b6b;font-size:13px}
+    .brand-box h1{
+      margin:0;
+      font-size:22px;
+      font-weight:800;
+      color:var(--brand5);
+    }
 
-    /* Buttons area (left column) */
+    .brand-box p{
+      margin:4px 0 0;
+      color:#777;
+      font-size:13px;
+    }
+
+    /* BUTTON LIST */
     .buttons{
-      display:flex;flex-direction:column;gap:12px;margin-top:6px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      margin-top:14px;
     }
 
     .btn{
-      display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:var(--btn-radius);
-      text-decoration:none;color:var(--brand-2);background:linear-gradient(180deg,var(--brand-1), #23545a);
-      font-weight:700;box-shadow:0 10px 24px rgba(43,79,92,0.06);transition:transform .14s ease,box-shadow .14s ease,background .14s ease;
+      background:var(--brand1);
+      padding:15px 18px;
+      border-radius:var(--btn-radius);
+      display:flex;
+      align-items:center;
+      gap:14px;
+      color:white;
+      font-size:15px;
+      font-weight:600;
+      text-decoration:none;
+      box-shadow:0 8px 18px rgba(0,0,0,0.08);
+      transition:0.2s;
     }
-    .btn svg.icon{width:18px;height:18px;flex-shrink:0;fill:var(--brand-2);opacity:0.98}
-    .btn .label{flex:1;text-align:left; font-size:15px}
-    .btn.small{padding:10px 12px;font-weight:600;font-size:14px}
 
-    .btn:hover{transform:translateY(-4px);box-shadow:var(--shadow-2);background:linear-gradient(180deg,var(--brand-4), #173b41)}
-    .btn:active{transform:translateY(-1px)}
-    .btn:focus{outline:3px solid rgba(161,222,205,0.26);outline-offset:3px;border-radius:12px}
-
-    /* right column (card info + icons) */
-    .side{
-      background:linear-gradient(180deg,rgba(37,62,68,0.02), rgba(37,62,68,0.01));
-      border-radius:12px;padding:14px;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+    .btn:hover{
+      background:var(--brand4);
+      transform:translateY(-3px);
+      box-shadow:0 12px 26px rgba(0,0,0,0.12);
     }
-    .side .kpi{font-weight:700;font-size:20px;margin-top:8px;color:var(--brand-5)}
-    .side p.small{font-size:13px;color:#6b6b6b;margin:8px 0 14px;text-align:center}
 
-    /* social icons row */
-    .icon-row{display:flex;gap:12px;justify-content:center;margin-top:8px;flex-wrap:wrap}
+    .btn svg{
+      width:20px;
+      height:20px;
+      fill:white;
+    }
+
+    /* RIGHT PANEL */
+    .right{
+      background:#fdfdfd;
+      border-radius:18px;
+      padding:20px;
+      text-align:center;
+      box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    }
+
+    .right h2{
+      margin:0;
+      font-size:20px;
+      font-weight:800;
+      color:var(--brand5);
+    }
+
+    .right p{
+      margin:6px 0 18px;
+      color:#777;
+      font-size:13px;
+    }
+
+    .icon-row{
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-bottom:12px;
+    }
+
     .icon{
-      width:56px;height:56px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--brand-2);
-      border:1px solid rgba(16,18,20,0.04);box-shadow:0 12px 30px rgba(16,18,20,0.05);transition:transform .12s ease,background .12s ease,border-color .12s;
-    }
-    .icon svg{width:22px;height:22px;display:block}
-    .icon:focus{outline:3px solid rgba(161,222,205,0.24);outline-offset:3px;border-radius:50%}
-    .icon:hover{transform:translateY(-6px);background:var(--brand-3);border-color:var(--brand-3)}
-    .icon small{display:block;font-size:11px;color:#666;margin-top:6px;text-align:center}
-
-    /* footer */
-    footer{margin-top:16px;color:#8c8c8c;font-size:12px;text-align:center}
-
-    /* layout adapt */
-    @media (max-width:880px){
-      .card{grid-template-columns: 1fr; padding:20px}
-      .side{order:2;margin-top:14px}
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      background:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      box-shadow:0 10px 20px rgba(0,0,0,0.06);
+      border:1px solid #eee;
+      transition:0.2s;
     }
 
-    @media (max-width:520px){
-      .logo{width:64px;height:64px;border-radius:12px}
-      .btn{padding:12px 14px;font-size:15px}
-      .icon{width:48px;height:48px}
+    .icon:hover{
+      transform:translateY(-5px);
+      background:var(--brand3);
+      border-color:var(--brand3);
     }
 
-    /* subtle icon animation for attention */
-    @media (prefers-reduced-motion: no-preference){
-      .btn svg.icon{transform-origin:center;transition:transform .22s ease}
-      .btn:hover svg.icon{transform:rotate(6deg) scale(1.02)}
+    .icon svg{
+      width:22px;
+      height:22px;
     }
 
-    /* QR modal */
-    .qr-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(16,18,20,0.5);z-index:60}
-    .qr-modal.open{display:flex}
-    .qr-card{background:var(--brand-2);padding:18px;border-radius:16px;box-shadow:0 30px 80px rgba(16,18,20,0.5);text-align:center;max-width:360px}
-    .qr-card img{width:200px;height:200px;margin:6px auto;display:block;border-radius:8px}
-    .close-btn{margin-top:8px;padding:10px 14px;border-radius:12px;background:#f2f2f2;border:0;font-weight:700;cursor:pointer}
+    footer{
+      margin-top:14px;
+      font-size:12px;
+      color:#777;
+    }
 
-    /* small utility */
-    .muted{color:#6b6b6b;font-size:13px}
+    /* RESPONSIVE */
+    @media(max-width:880px){
+      .card{
+        grid-template-columns: 1fr;
+      }
+      .right{
+        margin-top:14px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="card" role="main" aria-labelledby="page-title">
+
+<div class="card">
+
+  <!-- LEFT SIDE -->
+  <div>
+    <div class="brand-box">
+      <img src="https://skinska.com/apps/skinska_files/logo.png" alt="Skinska Logo">
       <div>
-        <header class="meta">
-          <div class="brand" aria-hidden="false">
-            <!-- Logo: keep your hosted logo URL -->
-            <img class="logo" src="https://skinska.com/apps/skinska_files/logo.png" alt="Skinska Naturals logo" onerror="this.style.display='none'">
-            <div>
-              <h1 id="page-title">Skinska Naturals</h1>
-              <p class="lead">All official links — simple, elegant, and ready to share.</p>
-            </div>
-          </div>
-        </header>
-
-        <nav class="buttons" aria-label="Skinska quick links">
-          <!-- Website -->
-          <a class="btn" href="https://skinska.com/" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20" /></svg>
-            <span class="label">Visit Website</span>
-          </a>
-
-          <!-- Shop / Products -->
-          <a class="btn" href="https://skinska.com/collections/all" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M3 7h18v13H3zM16 3l-1.5 4h-7L6 3" /></svg>
-            <span class="label">Shop Products</span>
-          </a>
-
-          <!-- Instagram -->
-          <a class="btn" href="https://www.instagram.com/skinskanaturals/" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6a5 5 0 100 10 5 5 0 000-10zM18.2 5a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
-            <span class="label">Instagram</span>
-          </a>
-
-          <!-- YouTube -->
-          <a class="btn" href="https://www.youtube.com/@SkinskaNaturals" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M10 8l6 4-6 4V8z"/></svg>
-            <span class="label">YouTube Channel</span>
-          </a>
-
-          <!-- WhatsApp -->
-          <a class="btn" href="https://wa.me/919346987789" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M20 5.9A10 10 0 103.5 19L2 22l3-1A10 10 0 0020 5.9zM16.6 14.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1-.2.2-.6.7-.7.8-.1.2-.3.2-.5.1-.4-.1-1.6-.6-3-1.8-1.1-1-1.9-2.2-2.1-2.5-.2-.3 0-.5.1-.7.1-.2.2-.4.3-.6.1-.2.1-.4 0-.6-.1-.2-.5-1.2-.7-1.6-.2-.4-.4-.3-.6-.3-.2 0-.4 0-.6 0-.2 0-.5.1-.8.3-.3.2-1 1-1 2.4 0 1.4 1 2.9 1.2 3.1.2.2 2 3.1 4.9 4.3"/></svg>
-            <span class="label">Message on WhatsApp</span>
-          </a>
-
-          <!-- Google Maps / Reviews -->
-          <a class="btn" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7zM12 11.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
-            <span class="label">Find Us (Maps)</span>
-          </a>
-
-          <!-- X -->
-          <a class="btn" href="https://x.com/skinskapharma" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M21.35 7.1c-.57.25-1.18.42-1.82.5.66-.4 1.16-1.03 1.4-1.78-.62.36-1.31.62-2.04.77C17.98 5.6 17.1 5.5 16.2 6c-.9.5-1.5 1.4-1.9 2.5-.3.86-.3 2.06 0 3.08-2.4-.12-4.56-1.26-6-3.02-.3.54-.48 1.16-.48 1.83 0 1.26.7 2.36 1.77 3.01-.53.01-1.05-.16-1.48-.44v.04c0 1.77 1.26 3.24 2.94 3.58-.45.12-.92.18-1.4.18-.34 0-.67-.03-.99-.08.67 2.05 2.62 3.54 4.92 3.58-1.8 1.4-4.06 2.22-6.44 2.22-.42 0-.83-.02-1.24-.07 2.3 1.48 5.03 2.34 7.98 2.34 9.57 0 14.81-7.92 14.81-14.79 0-.23 0-.46-.01-.68.99-.72 1.82-1.63 2.49-2.66-.9.4-1.86.68-2.84.81z"/></svg>
-            <span class="label">X (Twitter)</span>
-          </a>
-
-        </nav>
-
-        <footer style="margin-top:12px" class="muted">Tip: Long-press any button on mobile to open in a new tab.</footer>
+        <h1>Skinska Naturals</h1>
+        <p>All official links — simple, elegant & updated.</p>
       </div>
+    </div>
 
-      <!-- Right / Side panel -->
-      <aside class="side" aria-label="Skinska quick actions">
-        <div style="text-align:center;width:100%">
-          <div class="kpi">Official Links</div>
-          <p class="small muted">One place for Shop, Social, Support and Reviews</p>
+    <div class="buttons">
+      <a class="btn" href="https://skinska.com/" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20"/></svg>
+        Visit Website
+      </a>
 
-          <!-- Circle icon row -->
-          <div class="icon-row" role="list" aria-label="Social links">
-            <a class="icon" href="https://skinska.com/" target="_blank" rel="noopener noreferrer" title="Website" aria-label="Website">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path stroke="#1d4d5b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20"/></svg>
-            </a>
+      <a class="btn" href="https://skinska.com/collections/all" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M3 7h18v13H3zM16 3l-1.5 4h-7L6 3"/></svg>
+        Shop Products
+      </a>
 
-            <a class="icon" href="https://www.instagram.com/skinskanaturals/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#C13584" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6a5 5 0 100 10 5 5 0 000-10zM18.2 5a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
-            </a>
+      <a class="btn" href="https://www.instagram.com/skinskanaturals/" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6a5 5 0 100 10 5 5 0 000-10z"/></svg>
+        Instagram
+      </a>
 
-            <a class="icon" href="https://www.youtube.com/@SkinskaNaturals" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M10 8l6 4-6 4V8z"/></svg>
-            </a>
+      <a class="btn" href="https://www.youtube.com/@SkinskaNaturals" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M10 8l6 4-6 4V8z" /></svg>
+        YouTube Channel
+      </a>
 
-            <a class="icon" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank" rel="noopener noreferrer" title="Maps" aria-label="Maps">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7zM12 11.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
-            </a>
+      <a class="btn" href="https://wa.me/919346987789" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M20 5.9A10 10 0 103.5 19L2 22l3-1A10 10 0 0020 5.9z"/></svg>
+        Message on WhatsApp
+      </a>
 
-            <button class="icon" id="open-qr" aria-label="Open QR code" title="Open QR code" style="background:linear-gradient(180deg,#fff,#fbfbfb);border:1px solid rgba(0,0,0,0.02);cursor:pointer">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1d4d5b" d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM9 9h6v6H9z"/></svg>
-            </button>
-          </div>
+      <a class="btn" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7z"/></svg>
+        Find Us (Maps)
+      </a>
 
-          <p style="margin-top:12px" class="muted">Created for Skinska • Ready for GitHub Pages</p>
-        </div>
-      </aside>
+      <a class="btn" href="https://x.com/skinskapharma" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM9 9h6v6H9z"/></svg>
+        X (Twitter)
+      </a>
     </div>
   </div>
 
-  <!-- QR Modal (generated dataURI QR for the website) -->
-  <div class="qr-modal" id="qrModal" aria-hidden="true" role="dialog" aria-label="QR code modal">
-    <div class="qr-card" role="document">
-      <h3 style="margin:6px 0 8px;color:var(--brand-5)">Scan to open Skinska</h3>
-      <!-- Generated QR image (data URI) -->
-      <img id="qrImage" alt="QR code for Skinska" src="">
-      <div style="display:flex;gap:8px;justify-content:center">
-        <button class="close-btn" id="closeQr">Close</button>
-        <a class="close-btn" id="downloadQr" download="skinska-qr.png" style="text-decoration:none;">Download</a>
-      </div>
+  <!-- RIGHT SIDE -->
+  <div class="right">
+    <h2>Official Links</h2>
+    <p>One place for Shop, Social, Support & Reviews</p>
+
+    <div class="icon-row">
+      <a class="icon" href="https://skinska.com/" target="_blank">
+        <svg viewBox="0 0 24 24"><path stroke="#1d4d5b" fill="none" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20"/></svg>
+      </a>
+
+      <a class="icon" href="https://www.instagram.com/skinskanaturals/" target="_blank">
+        <svg viewBox="0 0 24 24"><path fill="#C13584" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z"/></svg>
+      </a>
+
+      <a class="icon" href="https://www.youtube.com/@SkinskaNaturals" target="_blank">
+        <svg viewBox="0 0 24 24"><path fill="#FF0000" d="M10 8l6 4-6 4V8z"/></svg>
+      </a>
+
+      <a class="icon" href="https://maps.app.goo.gl/TYptLbKi6cs2jnCe8" target="_blank">
+        <svg viewBox="0 0 24 24"><path fill="#34A853" d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7z"/></svg>
+      </a>
     </div>
+
+    <footer>Created for Skinska • Ready for GitHub Pages</footer>
   </div>
 
-  <script>
-    // Minimal QR generation using a tiny inline SVG QR (no external libs).
-    // This generates a QR for the main website and converts to PNG data URI.
-    // If you prefer a different link, update `targetUrl`.
-    (function(){
-      const targetUrl = "https://skinska.com/";
-      const openBtn = document.getElementById('open-qr');
-      const modal = document.getElementById('qrModal');
-      const qrImg = document.getElementById('qrImage');
-      const closeBtn = document.getElementById('closeQr');
-      const downloadBtn = document.getElementById('downloadQr');
-
-      // Simple QR generation fallback: use Google's chart API as a lightweight option.
-      // Note: This is a public image URL and works without JS libs.
-      // If you want to keep everything entirely self-contained, we can swap to server-side generated qr.
-      const qrUrl = "https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=" + encodeURIComponent(targetUrl) + "&choe=UTF-8";
-
-      openBtn.addEventListener('click', function(){
-        qrImg.src = qrUrl;
-        modal.classList.add('open');
-        modal.setAttribute('aria-hidden','false');
-        // set download link
-        downloadBtn.href = qrUrl;
-      });
-
-      closeBtn.addEventListener('click', function(){
-        modal.classList.remove('open');
-        modal.setAttribute('aria-hidden','true');
-      });
-
-      // close modal with Escape
-      document.addEventListener('keydown', function(e){
-        if(e.key === 'Escape' && modal.classList.contains('open')){
-          modal.classList.remove('open');
-          modal.setAttribute('aria-hidden','true');
-        }
-      });
-
-      // close if click outside card
-      modal.addEventListener('click', function(e){
-        if(e.target === modal){
-          modal.classList.remove('open');
-          modal.setAttribute('aria-hidden','true');
-        }
-      });
-    })();
-  </script>
+</div>
 </body>
 </html>
