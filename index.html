@@ -33,7 +33,7 @@
         text-align: center;
     }
 
-    /* LOGOS LEFT - CENTER - RIGHT (NO BOXES) */
+    /* LOGOS: LEFT - CENTER - RIGHT */
     .logos {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
@@ -41,12 +41,16 @@
         margin-bottom: 18px;
     }
 
-    .logos img {
+    .logo-left,
+    .logo-right {
         height: 42px;
         width: auto;
-        background: none;
-        padding: 0;
-        border-radius: 0;
+        justify-self: center;
+    }
+
+    .logo-center {
+        height: 64px; /* MAIN LOGO BIGGER */
+        width: auto;
         justify-self: center;
     }
 
@@ -136,9 +140,9 @@
 
     <!-- LOGOS -->
     <div class="logos">
-        <img src="logo-uk-opss.png" alt="UK OPSS">
-        <img src="logo-main.png" alt="Skinska">
-        <img src="logo-us-fda.png" alt="US FDA">
+        <img src="logo-uk-opss.png" class="logo-left" alt="UK OPSS">
+        <img src="logo-main.png" class="logo-center" alt="Skinska">
+        <img src="logo-us-fda.png" class="logo-right" alt="US FDA">
     </div>
 
     <h1>Skinska Naturals</h1>
