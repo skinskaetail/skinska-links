@@ -8,7 +8,7 @@
 <!-- Poppins Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- Font Awesome (official icons) -->
+<!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
 <style>
@@ -16,7 +16,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Poppins', sans-serif;
-        background: #1d4d5b; /* SKINSKA BRAND COLOR */
+        background: #1d4d5b;
         color: #ffffff;
         display: flex;
         justify-content: center;
@@ -26,29 +26,38 @@
     .container {
         width: 100%;
         max-width: 420px;
-        background: #1d4d5b; /* SAME BRAND COLOR */
-        padding: 32px 28px;
+        background: #1d4d5b;
+        padding: 32px 26px;
         border-radius: 22px;
         box-shadow: 0 14px 44px rgba(0,0,0,0.28);
         text-align: center;
     }
 
-    .logo {
-        max-width: 150px;
-        height: auto;
+    /* LOGOS LEFT - CENTER - RIGHT */
+    .logos {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
         margin-bottom: 18px;
+    }
+
+    .logos img {
+        height: 42px;
+        width: auto;
+        background: #ffffff;
+        padding: 6px 10px;
+        border-radius: 6px;
+        justify-self: center;
     }
 
     h1 {
         margin: 0 0 6px;
         font-size: 26px;
-        font-weight: 700; /* Poppins Bold */
-        color: #ffffff;
+        font-weight: 700;
     }
 
     .subtitle {
         font-size: 14px;
-        font-weight: 400;
         color: #e6f2f5;
         margin-bottom: 24px;
     }
@@ -69,31 +78,54 @@
         transition: 0.25s ease;
     }
 
-    .link-btn i {
-        font-size: 18px;
-        width: 22px;
-        text-align: center;
-        color: #ffffff;
-    }
-
     .link-btn:hover {
         background: rgba(255,255,255,0.25);
         transform: translateY(-1px);
     }
 
+    .link-btn i {
+        font-size: 18px;
+        width: 22px;
+        text-align: center;
+    }
+
+    /* ORIGINAL BRAND ICON COLORS */
+    .fa-instagram {
+        background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-facebook-f { color: #1877F2; }
+    .fa-youtube { color: #FF0000; }
+    .fa-x-twitter { color: #000000; }
+    .fa-whatsapp { color: #25D366; }
+    .fa-pinterest-p { color: #E60023; }
+    .fa-threads { color: #000000; }
+    .fa-tiktok { color: #00f2ea; }
+    .fa-globe, .fa-location-dot { color: #ffffff; }
+
     .divider {
-        margin: 26px 0 18px;
+        margin: 28px 0 20px;
         border-top: 1px solid rgba(255,255,255,0.35);
     }
 
-    .footer {
-        font-size: 13px;
-        color: #ffffff;
-        opacity: 0.9;
+    .address {
+        font-size: 12.5px;
+        line-height: 1.6;
+        text-align: left;
+        color: #f1f5f9;
     }
 
-    .footer strong {
+    .address strong {
+        color: #ffffff;
         font-weight: 600;
+    }
+
+    .footer {
+        margin-top: 16px;
+        font-size: 13px;
+        text-align: center;
+        opacity: 0.95;
     }
 </style>
 </head>
@@ -102,13 +134,16 @@
 
 <div class="container">
 
-    <!-- LOGO (NO BOX) -->
-    <img src="logo.png" alt="Skinska Naturals Logo" class="logo">
+    <!-- LOGOS -->
+    <div class="logos">
+        <img src="logo-uk-opss.png" alt="UK OPSS">
+        <img src="logo-main.png" alt="Skinska">
+        <img src="logo-us-fda.png" alt="US FDA">
+    </div>
 
     <h1>Skinska Naturals</h1>
     <div class="subtitle">Official social media & customer support links</div>
 
-    <!-- LINKS (FINAL ORDER) -->
     <a class="link-btn" href="https://skinska.com" target="_blank">
         <i class="fa-solid fa-globe"></i> Visit Website
     </a>
@@ -151,8 +186,23 @@
 
     <div class="divider"></div>
 
+    <div class="address">
+        <strong>Skinska Pharmaceutica Private Limited</strong><br>
+        Mailing Address: H.No 4-2-101 | 1st Floor | Vyshali Nagar | Miyapur | Hyderabad – 500049 | India<br>
+        Corp Office: T-Hub Phase 2 | Knowledge City | Madhapur | Hyderabad – 500081 | India<br>
+        Regd. Office: E 309 | Crystal Plaza | Andheri West | Mumbai – 400053 | India<br><br>
+
+        <strong>Skinska Pharmaceutica Limited (UK)</strong><br>
+        Corp Office: 34 Ingledow Court | Leeds | LS17 8TP | West Yorkshire | United Kingdom<br>
+        Registration No. 11740477<br><br>
+
+        <strong>Skinska Pharmaceutica LLC (USA)</strong><br>
+        Corp Office: 13010 Ridgeline BLVD | APT 11212 | Cedar Park | Texas | United States<br>
+        Registration No. 1462919
+    </div>
+
     <div class="footer">
-        Contact: <strong>info@skinska.com</strong>
+        orders@skinska.com | info@skinska.com | skinskapvtltd@gmail.com
     </div>
 
 </div>
