@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Skinska Naturals — Official Links</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Poppins Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -27,18 +27,43 @@
         width: 100%;
         max-width: 420px;
         background: #1d4d5b;
-        padding: 34px 26px;
+        padding: 32px 26px;
         border-radius: 22px;
         box-shadow: 0 14px 44px rgba(0,0,0,0.28);
         text-align: center;
     }
 
-    /* BIG CENTER LOGO */
-    .logo-big {
-        height: 140px;
+    /* LOGOS: LEFT - CENTER - RIGHT */
+    .logos {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+
+    .logo-left,
+    .logo-right {
+        height: 42px;
         width: auto;
-        display: block;
-        margin: 0 auto 30px;
+        justify-self: center;
+    }
+
+    .logo-center {
+        height: 64px; /* MAIN LOGO BIGGER */
+        width: auto;
+        justify-self: center;
+    }
+
+    h1 {
+        margin: 0 0 6px;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: #e6f2f5;
+        margin-bottom: 24px;
     }
 
     .link-btn {
@@ -68,7 +93,7 @@
         text-align: center;
     }
 
-    /* BRAND ICON COLORS */
+    /* ORIGINAL BRAND ICON COLORS */
     .fa-instagram {
         background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
         -webkit-background-clip: text;
@@ -101,7 +126,7 @@
     }
 
     .footer {
-        margin-top: 18px;
+        margin-top: 16px;
         font-size: 13px;
         text-align: center;
         opacity: 0.95;
@@ -113,8 +138,15 @@
 
 <div class="container">
 
-    <!-- SINGLE BIG CENTER LOGO -->
-    <img src="logo-main.png" class="logo-big" alt="Skinska Naturals Logo">
+    <!-- LOGOS -->
+    <div class="logos">
+        <img src="logo-uk-opss.png" class="logo-left" alt="UK OPSS">
+        <img src="logo-main.png" class="logo-center" alt="Skinska">
+        <img src="logo-us-fda.png" class="logo-right" alt="US FDA">
+    </div>
+
+    <h1>Skinska Naturals</h1>
+    <div class="subtitle">Official social media & customer support links</div>
 
     <a class="link-btn" href="https://skinska.com" target="_blank">
         <i class="fa-solid fa-globe"></i> Visit Website
